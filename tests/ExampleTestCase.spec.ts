@@ -9,6 +9,6 @@ test('ClickHome', async({page}) => {                                            
     const navigateTo = new NavigationPage(page)
    
     await navigateTo.Home()         
-    expect(page).toHaveURL("https://testautomationpractice.blogspot.com/")              //  Then I will see the Homepage 
+    await expect(page).toHaveURL('https://testautomationpractice.blogspot.com/')              //  Then I will see the Homepage 
 })
 
