@@ -6,3 +6,6 @@
 /playwright/.cache/
 /playwright/.auth/
 node_modules/
+package.json
+package.json
+playwright.config.ts
