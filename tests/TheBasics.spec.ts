@@ -25,15 +25,13 @@ test('Locators for GUI Elements', async({page}) => {
 
 })
 
-test('User Facing Locators for GUI Elements', async({page}) => {                               // this is that excact same test as the original, just using a constant to shorten it
+test('User Facing Locators for GUI Elements', async({page}) => {                               //  this is that excact same test as the original, just using a constant to shorten it
     
     await page.getByRole('textbox', {name: "Phone"}).fill("9999999999")
     await page.getByRole('textbox', {name: "Email"}).fill("test@test.com")
     await page.getByRole('textbox', {name: "Name"}).fill("Timothy")
-  
     await page.getByText('Submit').first().click()
-
-    await page.getByTitle('Automation Testing Practice').first().click()
+    await page.getByTitle('Automation Testing Practice')
    
 })
 
